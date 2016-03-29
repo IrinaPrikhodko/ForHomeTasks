@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Craze</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="handlebars-v4.0.5.js"></script>
+	
+</head>
+<body>
+	<header>
+		<div class="header_content">
+			<div class="logo_area">
+				<div class="icon">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="icons/apple.png" alt="apple_logo">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="icons/andr.png" alt="android_logo">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="icons/windw.png" alt="windows_logo">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<img src="imgs/img2.png" alt="nature_header_photo" class="main_photo">
+		</div>
+	</header>
+	<section id="feature" class="text-center">
+		<div class="feature_container">
+			<h2>Craze Features</h2>
+			<p>Lorem ipsum dolor sit amet, pro aeterno adipisci ex, pro no iriure accusam. Eros admodum intellegat ex mea, mei wisi nullam ne, qui cu aliquid nominavi. Est habemus maiestatis ut. Vim quod elitr interesset ea.</p>
+			<div class="feature_area">
+				<div class="single_feature">
+				    <div class="feature_border"></div>
+					<img src="icons/comp.png" alt="flat_design">
+					<h4><b>Flat Design</b></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
+				</div>
+				<div class="single_feature">
+					<div class="feature_border"></div>
+					<img src="icons/arr.png" alt="marketable">
+					<h4><b>Marketable</b></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
+				</div>
+				<div class="single_feature">
+					<div class="feature_border"></div>
+					<img src="icons/img.png" alt="photos">
+					<h4><b>Edit Photos</b></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
+				</div>
+				<div class="single_feature">
+					<div class="feature_border"></div>
+					<img src="icons/draw.png" alt="colors">
+					<h4><b>Edit Colors</b></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
+				</div>
+				<div class="single_feature">
+				    <div class="feature_border"></div>
+					<img src="icons/man.png" alt="avatar">
+					<h4><b>User Friendly</b></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
+				</div>	
+				<div class="single_feature">
+					<div class="feature_border"></div>
+					<img src="icons/sett.png" alt="gear">
+					<h4><b>100% Editable</b></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla.</p>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<section id="about">
+		<div class="about_video_part">
+			<div class="about_text_container">
+				<h2>Whats Craze all About?</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris.
+				</p>
+				<p>Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+				<ul>
+					<li><b> <</b> Lorem ipsum dolor sit amet</li>
+					<li><b> <</b> Lorem ipsum dolor sit amet consectetur elt</li>
+				</ul>
+			</div>	
+				<video controls class="video_image" preload="none" poster="imgs/img1.png">
+					<source src="media/video.mp4" type="video/mp4 ">
+					<source src="media/forvideo.ogg " type="video/ogg "> Your browser does not support the video tag.
+				</video>
+		</div>
+		<div class="slider_container text-center">
+			<ul class="slider">
+				<li>
+					<p>"Craze is one of the most complete app packages I have ever come across. I would highly</br> reccomend it to anyone!"</p>
+					<h6>Sarah Hunt</h6>
+				</li>
+				<li>
+					<p>"Craze is one of the most complete app packages I have ever come across. I would highly</br> reccomend it to anyone!"</p>
+					<h6>Sarah Hunt</h6>	
+				</li>
+				<li>
+					<p>"Craze is one of the most complete app packages I have ever come across. I would highly</br> reccomend it to anyone!"</p>
+					<h6>Sarah Hunt</h6>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section id="pricing" class="text-center">
+		<div class="pricing_container">
+			<div class="pricing_header">
+				<h2 class="heading">Pricing Plans</h2>
+				<p>Lorem ipsum dolor sit amet, pro aeterno adipisci ex, pro no iriure accusam. Eros admodum intellegat ex mea, mei wisi nullam ne, qui cu aliquid nominavi. Est habemus maiestatis ut. Vim quod elitr interesset ea.</p>
+			</div>
+			<ul class="pricing_table_area">
+				<script id ="sfeature_template" type="x-handlebars-template">​
+					{{#each this}}
+						<li data-index="{{id}}" class="pricing_table">
+							<h2>{{title}}</h2>
+							<ul>
+								<li><b><span>{{currency}}</span>{{int_part}}<sup>{{float_part}}</sup></b></li>
+								<li>{{feature1}}</li>
+								<li>{{feature2}}</li>
+								<li>{{feature3}}</li>
+								<li>{{feature4}}</li>
+								<li>{{feature5}}</li>
+							</ul>
+							<h2 class="button">
+								<button class="btn btn-primary">{{btn_value}}</button>
+							</h2>
+						</li>
+					{{/each}}
+				</script>
+			</ul>
+		</div>
+		
+		<div class="price-page">
+			<div class="cover-page">
+				<div class="price_content">
+					<h2></h2>
+					<p></p>
+					<form>
+						<table border="2" class="formtable">
+							<tr>
+								<td></td>
+								<td>
+									<input type="text" name="FeatureName" size="20"/>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+									<td>
+										<input type="text" name="FIO" size="20"/>
+									</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<input type="text" name="mail" size="20"/>
+								</td>
+							</tr>
+							<tr>
+								<td align="left">
+								<input type="button" name="OK" value="SEND"></td>
+							</tr>
+						</table>
+					</form> 
+					<button class="escape">Escape</button>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<section id="social">
+		<div class="social_area text-center">
+			<h2>Say Hi & Get in Touch</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse. </p>
+			<div class="social">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="icons/Twitter.png" alt="twitter_logo">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="icons/Facebook.png" alt="facebook_logo">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="icons/Pinterst.png" alt="pinterst_logo">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="icons/Google+.png" alt="google+_logo">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="icons/LinkedIn.png" alt="linkedin_logo">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="icons/YouTube.png" alt="youtube_logo">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section id="footer">
+		<footer class="footer_menu text-capitalize">
+				<ul>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Download</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">Email</a></li>
+					<li><a href="#">Support</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+		</footer>
+	</section>
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+[
+	{ 
+	  "id": 1,
+	  "title": "Basic",
+	  "currency": "$",
+	  "int_part": "19",
+	  "float_part": "99",
+	  "feature1": "Feature 1", 
+	  "feature2": "Feature 2", 
+	  "feature3": "Feature 3", 
+	  "feature4": "Feature 4", 
+	  "feature5": "Feature 5",
+	  "btn_value": "PURCHASE" 
+	},
+	{ 
+	  "id": 2,
+	  "title": "Standart",
+	  "currency": "$",
+	  "int_part": "39",
+	  "float_part": "99",
+	  "feature1": "Feature 1", 
+	  "feature2": "Feature 2", 
+	  "feature3": "Feature 3", 
+	  "feature4": "Feature 4", 
+	  "feature5": "Feature 5",
+	  "btn_value": "PURCHASE"   
+	},
+	{ 
+	  "id": 3,
+	  "title": "Deluxe",
+	  "currency": "$",
+	  "int_part": "59",
+	  "float_part": "99",
+	  "feature1": "Feature 1", 
+	  "feature2": "Feature 2", 
+	  "feature3": "Feature 3", 
+	  "feature4": "Feature 4", 
+	  "feature5": "Feature 5",
+	  "btn_value": "PURCHASE"
+	},
+	{ 
+	  "id": 4,
+	  "title": "Unlimited",
+	  "currency": "$",
+	  "int_part": "79",
+	  "float_part": "99",
+	  "feature1": "Feature 1", 
+	  "feature2": "Feature 2", 
+	  "feature3": "Feature 3", 
+	  "feature4": "Feature 4", 
+	  "feature5": "Feature 5",
+	  "btn_value": "PURCHASE"
+	}
+]
