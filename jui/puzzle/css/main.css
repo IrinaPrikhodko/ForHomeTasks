@@ -1,0 +1,77 @@
+.game-container{
+	z-index: 50px;
+	margin-top: 10%;
+	margin-left: 5%;
+	height: 500px;
+	width: 800px;
+	background-color: #00ccff;
+	position: absolute;
+}
+
+header h1{
+	position: absolute;
+	left: 50px;
+}
+
+.game-container p{
+	font-size: 1.5em;
+	color: #0033ff;
+	text-align: center;
+	line-height: 0.8em;
+	margin: 20px;
+}
+
+.game-container .puzzle-container{
+	position: absolute;
+	z-index: 60px;
+	background-color: #ffffff;
+	top: 20px;
+	left: 20px;
+	width: 760px;
+	height: 460px;
+}
+
+.puzzle-container .full-picture{
+	width: 300px;
+	height: 300px;
+	top: 53px;
+	left: 55%;
+	z-index: 70px;
+	position: absolute;
+}
+
+.puzzle-container #puzzle{
+	margin: 0;
+	top: 50px;
+	position: absolute;
+	left: 5%;
+	z-index: 65px;
+	width: 300px;
+	height: 300px;
+	border-style: groove;
+	border-width: 4px;
+}
+
+#puzzle .puzzle-part{
+	margin: 0;
+	padding: 0;
+	float: left;
+	height: 100px;
+	width: 100px;
+	z-index: 70px;
+}
+
+.result {
+	position: absolute;
+	z-index: 100px;
+	top: 500px;
+	left: 320px;
+	visibility: hidden;
+	background-color: #99ffff;
+}
+
+.result h2{
+	font-size: 3em;
+	padding: 0;
+	margin: 0;
+}
